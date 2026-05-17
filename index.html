@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XTRA Bicycle — Premium Bike Shop</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="ann">🚚 FREE SHIPPING ON ORDERS OVER $500 &nbsp;✦&nbsp; NEW COLLECTION 2025 &nbsp;✦&nbsp; FREE TEST RIDES
+    EVERY WEEKEND</div>
+
+  <header id="hdr">
+    <a href="#" class="logo"><img class="li"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD0UlEQVR4nO2YW4xOVxTHzwwmcZn56JtINCFEGnH3hKTxQB+0Sqm7PjZpJB5ECGMwD8Jo0hZp0qAI7Utp3Z4RIsFLkz4wOniRjGuqLqk0mJ+sWIeVZZ+bz1wezj85+c639l5r/ffZa6+99o6iEiVKlChRokSJEiWqBVALfAWsAfpGPR1AP+BDYDqwEbjKG6yLeiqAEUAb6fgm6qkA1qYQ/x9olHCKeiqAZY7wn8ABYAUwuCsIZE1/e4b+eNP3dqcTDhC4mzL9p4ClGfp9gKdGb2DXsX9F4EfgCfC3/sb4vICNC0ZvWucyTifynSFyooDeLqO3pnNZphMZCXQokRfABt2Isp6jZgDHu20AOoizVIf7QE13kR8MPKZ6fNRdA9gXICMzsjXjOeN01nYH+fEa9x4XM/T6AjeczqWuYx6O/XMupU5K0WsODLoDGPo+ydUBC4BfgVYl90TfJWy2GOfPgNHAT0b2c4Ld4W4Te2De9wK7gcu6rmJ/wuFL4ZSX/BfAdfJjl+qNNbL/gA8Ctk+aPhel6izg5xowN414L+BbiqPF2JBQirHK2f/MtMnamexmMi+2B6vVAPk7WtqOA/rrAWSm2bgsmtXGQiNrix0FFq6EyqaAHTnUTFJ//TVRNAbqr5ZQ2Fj8BtQHBrnH9HnuvugMXTvtRj5T9SzZf4D5CR/iBTAm4LcBOOL6vqq91Ol1R74mR9pcLPWP+d+q59rNRnYMGOYW7kpXkh+VNGp1EkK81g1CbNRFmm1s2NQnGDht+p1V2SDglpHPAYZoZopn6bxpl8PLp+b/PaACfGxkMjNTEjhUXDjNjzRNxWhMUBRiMWQWJpq21T596ix6CLGpwC9G1mTs+Nnsl8ClyfQ7FLnbgLEBhTpNYTFuuMpyh2lrV5n9KDEOqr2/jGyc8TNK02+Mw6Fs4050rSJ4ZAShhbuc6vEwPu8C/yb5A752eksCfOpN+6M8A1jyHgbQbOxl+fs+YwANfgBXQ1NqFGqARSmVpdwoxLjt2nYCP4hTYy/LX61+tMUJ2XCCDyEbrxuigpAd1+jvz9G/Wn8b/SKWQinGXfu1chiT3fKm0Z+TQ6cafxVNvTHmhbLMkTw3Yxpah4ye2OiVQ+9d/dUCf7iNrE/cONc0xEYrKcYaXD6XHP9JFgmjX9RfBfjd6cz2naTKs7inm4YsmgEaLlLYrXe7r2BrXvIF/NXre5MLG8G2pClqoRg6VKfwrcI7+hNsSw05qfJy3H+icTyrKPEq/LW9FTYpRuX+UkpeWaRXzBFPrhMPalvvasln+JNH3kU27/WCdXgJRt7oLqkCk1wAAAAASUVORK5CYII="
+        alt="" />XTRA<span>BIKE</span></a>
+    <nav>
+      <a href="#home" class="ac">Home</a>
+      <a href="#products">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="ni">
+      <button class="ib" title="Wishlist"><img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADdElEQVR4nO2ZSYwNURSGL01ibCyEiGFhaKRF0ywMiZXYGCIINmIhZrEyLAjSJLbEHMSU2Jh2ZksRIogEsTC2TsSszcEnh7/iLup1VXXX69xO3p/U4r1z7n/+U3c+5VwJJZRQQgkhA6gA1gCXgPvAJ+AbUAdcBNYBgzPwDQHWq22duD6J2/5bDQzKM4FRwGXS4TdwDqhqgG+EfMw3DS4B1U1JoC2wwwv4BtgPTFXvdATaAX2AKcBu4K18fwKbgDKPrwzYLFvEtwuYLA7j6ijuacAB+UQvaDvQJmsS3YArIvkM1ADlKdp1BjZqmBiOKAF7juk/s20w3xR85Ur+i9c7XbP0RJTEMxsKKfP3OaqAp+I45iXxBBjeCL5q4LmXTHLPaDhFSfTKGtTj6SeOCJZY3ybw9fKS2ZZmYv/WcMrcEwXe5Dc9I3PgG6lh9qtBPm91qmlqUI/TltHVOfJtkcaLhRwqvNWkPMfAfyd7jnxdvNVxYJzDWhn3u8ABHJTWVXFG200N01zgAKZL64U440MZB7jAwf9p8CDOWC9jJxc4gE7SWh9njHbPdi5wAB2iU0ec8YWMjd4EmwtAb2l9Hme8I2PjT5rNBGC0tN6OMx6VcbELHMAyaT0UZ1wu42EXOPj/0pcWurEZ3oU84YH2wAdprSjkdFMOs1ygAOZI4/WGnFbIyRJq5QID0Aq4JY1LkrrNCgGGGS4wADOlrTZx+HuT3i4xXVwg4N+pt7bgJI9p0Aa4oQYHXSAADkvTtdTXAmCYV0BYVHSVyXqWSMtXYGjWxgvU+DswsWgqk3VMkgbD/MaSRIUIqwCOzV1lcvzxqh8kFxxSXFOPe8k0W88AE4CPin2iyddl1bnOeGN0bm5qC8ecq1iGk6YhL+IylTAj7M1cvkwfZ6tXpj2aexztqhtVUzKctdJqjvxWpj0v7l8qqxbvdKGC9XsFfASMyYFzHPDYO7ROzkdtcuABwF0F/qnhkHkca/O1by4/xHXfTuHFUd1wAWCfN2+uAv0zvgxrg+bEHvusUFzVyRtWdN//ojfcOmGuLfSqNi/tm4sLAUB34JTXOzZpexcoGlzw/Gxp7e5CAzALeCWRtiDM9mz2Feq1N6EXupAB9AROe2/djjk7vd/Wcz1cSwEwT8eaCLZTr3QtEUAlcE9PpWvJ4N/NLpibZgmumfAHX8sHSn8qKcsAAAAASUVORK5CYII="
+          alt="" /></button>
+      <button class="ib" id="cartBtn" title="Cart"><img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACJUlEQVR4nO3Zy0ocQRTG8XJASfAFvIzgG+hTxOg7xLgJKMliNuJWAllFnyEL3c9CV8GtSciV+AKBBCSLuNGQi4L/UHQJ7XFGO9p1qrDPDwYGGs5XXVNzqqbHOWOMMcYYY4wx5gJgDvjGRX+BT8CCu83offPSqmv4BBwDbXcbAbPA1wqT0HFNAnTEBHRdkwDTYgIOgJZrCqAF/BCTMF26/oX0HsSehG6/PgC8IK1TYDRZHwAWSOtz1Ju/qg8Ak6T13KXuA5qAPTGOe1rB3dTnAWAkfOfP/AbuNuY8ADwUY3jZqPMAsCnGsKwZ3krZB4ABYF/kT2nlJ+8DPVbgdz8pWvnJ+4Bf7iJ7Qys7iz7gG57IntfIzaIPAHeAX6VMvxWOxc7Npg8AMyJzL3ZmVn0AWBOZ67Ezs+oD/gePyLwfMy+rPtDj+PsHGI6Vl10f8A87RNZOrKyb9AFNKy41YAI4SXDzPnPS5QB4mmACnrmcUDwO+xj+PovlOOwCj9TP/lUAQ8AT4A3wM7xeA4/9Ne06qoCxsAL6+VDliW1ddVRRfGKXDfrMe2Awdh11FMu1qqXYddRRfFfLtoDx8PLvy17FrqMOOBKDGy9da4trh7HrqAMOxeDa15yAWuqoo//S9YPerrp066qjjmJ/rmoxdh11FNuX35+v8rbCNnjjOkkAo2F/7uddxYNQLXWSAAb9/gzsho5+FN4v/s8nVlcdY4wxxhhj3Dn/AFrjDMNoOnc2AAAAAElFTkSuQmCC"
+          alt="" /><span class="cb" id="cBadge">0</span></button>
+      <button class="hb" id="hbtn"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mnav" id="mnav">
+    <button class="mcl" id="mcl">✕</button>
+    <a href="#home" onclick="cm()">Home</a>
+    <a href="#products" onclick="cm()">Shop</a>
+    <a href="#categories" onclick="cm()">Categories</a>
+    <a href="#services" onclick="cm()">Services</a>
+    <a href="#about" onclick="cm()">About</a>
+    <a href="#contact" onclick="cm()">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hbg" id="heroBg" style="background-image:url( + hero + )"></div>
+    <div class="ho"></div>
+    <div class="hc">
+      <div class="hbadge">⚡ New Collection 2025</div>
+      <h1>RIDE<br /><em>BEYOND</em><br />LIMITS</h1>
+      <p>Premium bicycles engineered for those who demand perfection. From city streets to mountain trails — find your
+        perfect ride.</p>
+      <div class="hcta">
+        <a href="#products" class="bp">Explore Collection →</a>
+        <a href="#about" class="bo">Our Story</a>
+      </div>
+    </div>
+    <div class="hprice">
+      <span class="pl">Starting from</span>
+      <div class="pv"><span>$</span>749</div>
+    </div>
+    <div class="hscroll" onclick="document.getElementById('feat').scrollIntoView({behavior:'smooth'})">
+      <div class="sl"></div>Scroll
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="mq">
+    <div class="mqt">
+      <div class="mqi">FREE TEST RIDES<span class="mqd"></span></div>
+      <div class="mqi">PREMIUM QUALITY<span class="mqd"></span></div>
+      <div class="mqi">FREE SHIPPING<span class="mqd"></span></div>
+      <div class="mqi">EXPERT TEAM<span class="mqd"></span></div>
+      <div class="mqi">CUSTOM DESIGNS<span class="mqd"></span></div>
+      <div class="mqi">ELECTRIC BIKES<span class="mqd"></span></div>
+      <div class="mqi">FREE TEST RIDES<span class="mqd"></span></div>
+      <div class="mqi">PREMIUM QUALITY<span class="mqd"></span></div>
+      <div class="mqi">FREE SHIPPING<span class="mqd"></span></div>
+      <div class="mqi">EXPERT TEAM<span class="mqd"></span></div>
+      <div class="mqi">CUSTOM DESIGNS<span class="mqd"></span></div>
+      <div class="mqi">ELECTRIC BIKES<span class="mqd"></span></div>
+      <div class="mqi">FREE TEST RIDES<span class="mqd"></span></div>
+      <div class="mqi">PREMIUM QUALITY<span class="mqd"></span></div>
+      <div class="mqi">FREE SHIPPING<span class="mqd"></span></div>
+      <div class="mqi">EXPERT TEAM<span class="mqd"></span></div>
+      <div class="mqi">CUSTOM DESIGNS<span class="mqd"></span></div>
+      <div class="mqi">ELECTRIC BIKES<span class="mqd"></span></div>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <section class="features rv" id="feat">
+    <div style="text-align:center;margin-bottom:65px">
+      <div class="st" style="justify-content:center">Why Choose Us</div>
+      <h2 class="sh" style="text-align:center">WHAT MAKES US <em>DIFFERENT</em></h2>
+      <p class="ss" style="margin:0 auto;text-align:center">We don't just sell bikes — we craft experiences. Every
+        bicycle is built with passion and precision.</p>
+    </div>
+    <div class="fg">
+      <div class="fc rv">
+        <div class="fn">01</div>
+        <div class="fiw">🚴</div>
+        <h3>Free Test Rides</h3>
+        <p>Experience the thrill before you buy. Our expert staff guides you through every model in our showroom.</p>
+      </div>
+      <div class="fc rv">
+        <div class="fn">02</div>
+        <div class="fiw">🔧</div>
+        <h3>Expert Repairs</h3>
+        <p>Our certified technicians handle everything from basic tune-ups to complete overhauls with genuine parts.</p>
+      </div>
+      <div class="fc rv">
+        <div class="fn">03</div>
+        <div class="fiw">⚡</div>
+        <h3>Electric Bikes</h3>
+        <p>Cutting-edge e-bikes with long-range batteries, smart connectivity, and powerful motors for every terrain.
+        </p>
+      </div>
+      <div class="fc rv">
+        <div class="fn">04</div>
+        <div class="fiw">🎨</div>
+        <h3>Custom Designs</h3>
+        <p>Build your dream bike from scratch. Choose frame, color, components, and accessories to match your style.</p>
+      </div>
+      <div class="fc rv">
+        <div class="fn">05</div>
+        <div class="fiw">🚚</div>
+        <h3>Free Shipping</h3>
+        <p>All orders over $500 ship completely free, fully insured and professionally packaged to your doorstep.</p>
+      </div>
+      <div class="fc rv">
+        <div class="fn">06</div>
+        <div class="fiw">🏆</div>
+        <h3>Lifetime Support</h3>
+        <p>Purchase with confidence. Our dedicated team provides lifetime technical support on every bike we sell.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <div class="ph rv">
+      <div>
+        <div class="st">Our Collection</div>
+        <h2 class="sh">BEST <em>SELLERS</em></h2>
+      </div>
+      <div class="ftabs">
+        <button class="fb ac" onclick="fp(this,'all')">All</button>
+        <button class="fb" onclick="fp(this,'electric')">Electric</button>
+        <button class="fb" onclick="fp(this,'urban')">Urban</button>
+        <button class="fb" onclick="fp(this,'mountain')">Mountain</button>
+      </div>
+    </div>
+    <div class="pg" id="pgrid">
+      <div class="pc rv" data-cat="urban">
+        <div class="piw"><img src="img/WhatsApp Image 2026-05-14 at 6.39.16 PM.jpeg" />
+          <span class="pbadge">New</span>
+          <div class="pov"></div>
+        </div>
+        <div class="pinfo">
+          <div class="pcat">Urban Series</div>
+          <div class="pname">Urban Classic Pro</div>
+          <div class="prat"><span class="stars">★★★★★</span><span class="rtext">4.8 (124)</span></div>
+          <div class="ppr">
+            <div class="pprice"><span class="pnow">$1,249</span><span class="pold">$1,599</span></div><button
+              class="acb" onclick="ac(event)">+ Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="pc rv" data-cat="electric">
+        <div class="piw"><img src="img/WhatsApp Image 2026-05-14 at 6.39.16 PM (4).jpeg" /> <span class="pbadge"
+            style="background:#1a1aff">Electric</span>
+          <div class="pacts"><button class="pab" style="font-size:14px">👁</button></div>
+          <div class="pov"></div>
+        </div>
+        <div class="pinfo">
+          <div class="pcat">Electric Series</div>
+          <div class="pname">E-Storm 3000X</div>
+          <div class="prat"><span class="stars">★★★★★</span><span class="rtext">4.9 (89)</span></div>
+          <div class="ppr">
+            <div class="pprice"><span class="pnow">$2,799</span><span class="pold">$3,200</span></div><button
+              class="acb" onclick="ac(event)">+ Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="pc rv" data-cat="electric">
+        <div class="piw"><img src="img/WhatsApp Image 2026-05-14 at 6.39.16 PM (3).jpeg" /> <span class="pbadge"
+            style="background:#222">Exclusive</span>
+          <div class="pacts"><button class="pab" style="font-size:14px">👁</button></div>
+          <div class="pov"></div>
+        </div>
+        <div class="pinfo">
+          <div class="pcat">Premium Series</div>
+          <div class="pname">Shadow Rider</div>
+          <div class="prat"><span class="stars">★★★★☆</span><span class="rtext">4.6 (67)</span></div>
+          <div class="ppr">
+            <div class="pprice"><span class="pnow">$1,849</span><span class="pold">$2,100</span></div><button
+              class="acb" onclick="ac(event)">+ Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="pc rv" data-cat="urban">
+        <div class="piw"> <img src="img/WhatsApp Image 2026-05-14 at 6.39.16 PM (2).jpeg" alt=""> <span
+            class="pbadge">Hot</span>
+          <div class="pacts"><button class="pab" style="font-size:14px">👁</button></div>
+          <div class="pov"></div>
+        </div>
+        <div class="pinfo">
+          <div class="pcat">City Series</div>
+          <div class="pname">City Stealth</div>
+          <div class="prat"><span class="stars">★★★★★</span><span class="rtext">4.7 (203)</span></div>
+          <div class="ppr">
+            <div class="pprice"><span class="pnow">$975</span><span class="pold">$1,200</span></div><button class="acb"
+              onclick="ac(event)">+ Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="pc rv" data-cat="mountain">
+        <div class="piw"> <img src="img/WhatsApp Image 2026-05-14 at 6.39.15 PM.jpeg" alt=""> <span class="pbadge"
+            style="background:#1a7a1a">Trail</span>
+          <div class="pacts"><button class="pab" style="font-size:14px">👁</button></div>
+          <div class="pov"></div>
+        </div>
+        <div class="pinfo">
+          <div class="pcat">Mountain Series</div>
+          <div class="pname">Trail Blazer X</div>
+          <div class="prat"><span class="stars">★★★★★</span><span class="rtext">4.8 (156)</span></div>
+          <div class="ppr">
+            <div class="pprice"><span class="pnow">$1,399</span><span class="pold">$1,700</span></div><button
+              class="acb" onclick="ac(event)">+ Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="pc rv" data-cat="mountain">
+        <div class="piw"> <img src="img/WhatsApp Image 2026-05-14 at 6.39.15 PM (1).jpeg" alt=""> <span class="pbadge"
+            style="background:#111">Night</span>
+          <div class="pacts"><button class="pab" style="font-size:14px">👁</button></div>
+          <div class="pov"></div>
+        </div>
+        <div class="pinfo">
+          <div class="pcat">All-Terrain</div>
+          <div class="pname">Night Cruiser Fat</div>
+          <div class="prat"><span class="stars">★★★★☆</span><span class="rtext">4.5 (91)</span></div>
+          <div class="ppr">
+            <div class="pprice"><span class="pnow">$1,699</span><span class="pold">$2,050</span></div><button
+              class="acb" onclick="ac(event)">+ Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:55px" class="rv">
+      <a href="#" class="bp">View All Products →</a>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="categories" id="categories">
+    <div class="rv" style="text-align:center">
+      <div class="st" style="justify-content:center">Browse by Type</div>
+      <h2 class="sh" style="text-align:center">SHOP BY <em>CATEGORY</em></h2>
+    </div>
+    <div class="cg">
+      <div class="cc rvl"> <img src="img/WhatsApp Image 2026-05-14 at 6.39.16 PM (3).jpeg" alt="">
+        <div class="cov">
+          <div class="ctag">E-Bikes</div>
+          <div class="ctitle">ELECTRIC BICYCLES</div>
+          <div class="ccount">+120 Models Available</div>
+        </div>
+        <div class="carr">↗</div>
+      </div>
+      <div class="cc rvr"><img src="img/WhatsApp Image 2026-05-14 at 6.39.16 PM.jpeg" alt="">
+        <div class="cov">
+          <div class="ctag">Urban</div>
+          <div class="ctitle">CITY RIDERS</div>
+          <div class="ccount">+85 Models Available</div>
+        </div>
+        <div class="carr">↗</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <div class="about" id="about">
+    <div class="aimgw rvl"><img src="img/WhatsApp Image 2026-05-14 at 6.39.16 PM (2).jpeg" alt="About" />
+      <div class="aiov"></div>
+    </div>
+    <div class="acontent rvr">
+      <div class="st">Our Story</div>
+      <h2 class="sh">BUILT BY<br /><em>RIDERS,</em><br />FOR RIDERS</h2>
+      <p class="ss">Founded in 2010, XTRA Bicycle has been at the forefront of premium bike design. We combine
+        cutting-edge engineering with timeless aesthetics to create bikes that perform as beautifully as they look.</p>
+      <div class="srow">
+        <div class="si">
+          <div class="sn">15<span>+</span></div>
+          <div class="sl2">Years of Excellence</div>
+        </div>
+        <div class="si">
+          <div class="sn">50<span>K</span></div>
+          <div class="sl2">Happy Customers</div>
+        </div>
+        <div class="si">
+          <div class="sn">250<span>+</span></div>
+          <div class="sl2">Bike Models</div>
+        </div>
+        <div class="si">
+          <div class="sn">30<span>+</span></div>
+          <div class="sl2">Countries Served</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section class="testi" id="testimonials">
+    <div class="rv" style="margin-bottom:60px">
+      <div class="st" style="justify-content:center">Happy Riders</div>
+      <h2 class="sh" style="text-align:center">WHAT THEY <em>SAY</em></h2>
+    </div>
+    <div class="tt">
+      <div class="ti" id="tInner">
+        <div class="tc ac">
+          <div class="qm">"</div>
+          <div class="tst">★★★★★</div>
+          <p class="ttext">The Urban Classic Pro completely transformed my morning commute. The build quality is
+            exceptional — every component feels premium and perfectly tuned.</p>
+          <div class="ta">
+            <div class="av">A</div>
+            <div>
+              <div class="aname">Antonio Benz</div>
+              <div class="arole">Bike Designer, NYC</div>
+            </div>
+          </div>
+        </div>
+        <div class="tc">
+          <div class="qm">"</div>
+          <div class="tst">★★★★★</div>
+          <p class="ttext">I've ridden many bikes but the E-Storm 3000X is on another level. The electric assist is
+            seamless and the range is incredible. Best investment I've made!</p>
+          <div class="ta">
+            <div class="av" style="background:linear-gradient(135deg,#1a7a1a,#5aff5a)">S</div>
+            <div>
+              <div class="aname">Sarah Lisgun</div>
+              <div class="arole">Professional Cyclist</div>
+            </div>
+          </div>
+        </div>
+        <div class="tc">
+          <div class="qm">"</div>
+          <div class="tst">★★★★★</div>
+          <p class="ttext">The customer service at XTRA is outstanding. They helped me build a completely custom bike
+            that arrived perfectly assembled. Worth every penny.</p>
+          <div class="ta">
+            <div class="av" style="background:linear-gradient(135deg,#1a1aff,#5a5aff)">M</div>
+            <div>
+              <div class="aname">Marcus Chen</div>
+              <div class="arole">Mountain Enthusiast</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tnav">
+      <button class="td ac" onclick="gs(0)"></button>
+      <button class="td" onclick="gs(1)"></button>
+      <button class="td" onclick="gs(2)"></button>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <div class="services" id="services">
+    <div class="sc2 rvl">
+      <div class="st">What We Offer</div>
+      <h2 class="sh">OUR <em>SERVICES</em></h2>
+      <div class="slist">
+        <div class="sitem">
+          <div class="snum">01</div>
+          <div class="stxt">
+            <h4>Bike Fitting & Consultation</h4>
+            <p>Professional fitting sessions ensuring your bike perfectly matches your body and riding style.</p>
+          </div>
+        </div>
+        <div class="sitem">
+          <div class="snum">02</div>
+          <div class="stxt">
+            <h4>Maintenance & Repair</h4>
+            <p>Full workshop services from quick tune-ups to complete rebuilds by certified technicians.</p>
+          </div>
+        </div>
+        <div class="sitem">
+          <div class="snum">03</div>
+          <div class="stxt">
+            <h4>Custom Bike Builds</h4>
+            <p>Design your dream bike from the ground up with every component handpicked to your spec.</p>
+          </div>
+        </div>
+        <div class="sitem">
+          <div class="snum">04</div>
+          <div class="stxt">
+            <h4>Bike Upgrades</h4>
+            <p>Boost performance with premium component upgrades — wheels, drivetrain, brakes, and more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="simgw rvr"><img src="img/WhatsApp Image 2026-05-14 at 6.39.15 PM (1).jpeg" alt="Services" /></div>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <div class="nl" id="contact">
+    <div class="nltext rvl">
+      <h2>STAY IN THE LOOP</h2>
+      <p>Get exclusive deals, new arrivals & riding tips delivered to your inbox.</p>
+    </div>
+    <div class="nlform rvr"><input type="email" placeholder="Your email address..." id="eInp" /><button
+        onclick="sub()">Subscribe</button></div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="ft">
+      <div class="fb2">
+        <a href="#" class="logo"><img class="li"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD0UlEQVR4nO2YW4xOVxTHzwwmcZn56JtINCFEGnH3hKTxQB+0Sqm7PjZpJB5ECGMwD8Jo0hZp0qAI7Utp3Z4RIsFLkz4wOniRjGuqLqk0mJ+sWIeVZZ+bz1wezj85+c639l5r/ffZa6+99o6iEiVKlChRokSJEiWqBVALfAWsAfpGPR1AP+BDYDqwEbjKG6yLeiqAEUAb6fgm6qkA1qYQ/x9olHCKeiqAZY7wn8ABYAUwuCsIZE1/e4b+eNP3dqcTDhC4mzL9p4ClGfp9gKdGb2DXsX9F4EfgCfC3/sb4vICNC0ZvWucyTifynSFyooDeLqO3pnNZphMZCXQokRfABt2Isp6jZgDHu20AOoizVIf7QE13kR8MPKZ6fNRdA9gXICMzsjXjOeN01nYH+fEa9x4XM/T6AjeczqWuYx6O/XMupU5K0WsODLoDGPo+ydUBC4BfgVYl90TfJWy2GOfPgNHAT0b2c4Ld4W4Te2De9wK7gcu6rmJ/wuFL4ZSX/BfAdfJjl+qNNbL/gA8Ctk+aPhel6izg5xowN414L+BbiqPF2JBQirHK2f/MtMnamexmMi+2B6vVAPk7WtqOA/rrAWSm2bgsmtXGQiNrix0FFq6EyqaAHTnUTFJ//TVRNAbqr5ZQ2Fj8BtQHBrnH9HnuvugMXTvtRj5T9SzZf4D5CR/iBTAm4LcBOOL6vqq91Ol1R74mR9pcLPWP+d+q59rNRnYMGOYW7kpXkh+VNGp1EkK81g1CbNRFmm1s2NQnGDht+p1V2SDglpHPAYZoZopn6bxpl8PLp+b/PaACfGxkMjNTEjhUXDjNjzRNxWhMUBRiMWQWJpq21T596ix6CLGpwC9G1mTs+Nnsl8ClyfQ7FLnbgLEBhTpNYTFuuMpyh2lrV5n9KDEOqr2/jGyc8TNK02+Mw6Fs4050rSJ4ZAShhbuc6vEwPu8C/yb5A752eksCfOpN+6M8A1jyHgbQbOxl+fs+YwANfgBXQ1NqFGqARSmVpdwoxLjt2nYCP4hTYy/LX61+tMUJ2XCCDyEbrxuigpAd1+jvz9G/Wn8b/SKWQinGXfu1chiT3fKm0Z+TQ6cafxVNvTHmhbLMkTw3Yxpah4ye2OiVQ+9d/dUCf7iNrE/cONc0xEYrKcYaXD6XHP9JFgmjX9RfBfjd6cz2naTKs7inm4YsmgEaLlLYrXe7r2BrXvIF/NXre5MLG8G2pClqoRg6VKfwrcI7+hNsSw05qfJy3H+icTyrKPEq/LW9FTYpRuX+UkpeWaRXzBFPrhMPalvvasln+JNH3kU27/WCdXgJRt7oLqkCk1wAAAAASUVORK5CYII="
+            alt="" style="width:26px;height:26px" />XTRA<span>BIKE</span></a>
+        <p>Premium bicycles for every rider. Engineered to perfection, designed for the journey ahead.</p>
+        <div class="sl3">
+          <a href="#" class="sb">f</a><a href="#" class="sb">📷</a><a href="#" class="sb">𝕏</a><a href="#"
+            class="sb">▶</a>
+        </div>
+      </div>
+      <div class="fcol">
+        <h4>Quick Links</h4>
+        <ul class="fl2">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Shop</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Categories</h4>
+        <ul class="fl2">
+          <li><a href="#">Electric Bikes</a></li>
+          <li><a href="#">Urban Bikes</a></li>
+          <li><a href="#">Mountain Bikes</a></li>
+          <li><a href="#">Kids Bikes</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Spare Parts</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Working Hours</h4>
+        <ul class="hl">
+          <li><span>Mon – Fri</span><span class="ho2">8:00 – 18:00</span></li>
+          <li><span>Saturday</span><span class="ho2">9:00 – 16:00</span></li>
+          <li><span>Sunday</span><span style="color:#ff4444">Closed</span></li>
+        </ul>
+        <div class="ci">
+          <p>📍 <strong>Beverly Hills, Los Angeles CA</strong></p>
+          <p>📞 <strong>+1 (800) 123-4567</strong></p>
+          <p>✉️ <strong>hello@xtrabike.com</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="fbot">
+      <p>© 2025 XTRA Bicycle. All rights reserved.</p>
+      <div class="fbl"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookies</a></div>
+    </div>
+  </footer>
+
+  <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script src="script.js"></script
+</body>
+</html>
